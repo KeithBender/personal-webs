@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: "Work Sans", arial, sans-serif;
+    font-weight: 400;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #e7e6e4;
+    height: 500px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 40px 0;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 22px;
+}
+
+#nav-bar {
+    float: right;
+}
+
+#nav-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav-bar li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 40px 0;
+    position: relative;
+}
+
+#nav-bar a {
+    color: #868686;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-bar a:hover {
+    color: #000;
+}
+
+#nav-bar a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #626261;
+    
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 150ms;
+}
+
+#nav-bar a:hover::before {
+    width: 100%;
+}
+
+#splashDef {
+    display: block;
+    margin: 0;
+    padding: 180px 50px;
+    font-size: 14px;
+    text-align: center
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#strongskills{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+
+#strongskills ul {
+    width: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px 2px lightgrey;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -8em;
+    z-index: 1;
+    padding: 10px;
+}
+
+h3 {
+    line-height: 1.2;
+    font-weight: 500
+}
+
+p   {
+    color: #a6a6a6;
+}
+
+h2{
+    font-weight: 500;
+}
+
+#aboutMe {
+    display: flex;
+    text-align: center;
+    padding: 100px;
+    padding-top: 0;
+}
+
+#aboutMe h2{
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+}
+
+.description p{
+    margin: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#strongskills ul li {
+    padding: 10px;
+    margin: 0;
+}
