@@ -1,190 +1,142 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: "Work Sans", arial, sans-serif;
-    font-weight: 400;
-    background-color: #f8f9fa;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/splash2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    background: url(img/splash2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 800px;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.logo {
-    float: left;
-    padding: 40px 0;
-    text-decoration: none;
-    color: #1d1d1d;
-    font-size: 22px;
-}
-
-#nav-bar {
-    float: right;
-}
-
-#nav-bar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#nav-bar li {
-    display: inline-block;
-    margin-left: 30px;
-    padding: 40px 0;
-    position: relative;
-}
-
-#nav-bar a {
-    color: #868686;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#nav-bar a:hover {
-    color: #000;
-}
-
-#nav-bar a:before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #626261;
-    position: absolute;
-    top: 0;
-    width: 0;
-    color: #868686;
-    transition: all ease-in-out 150ms;
-}
-
-#nav-bar a:hover::before {
     width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-#splashDef {
-    display: block;
+
+nav {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: end;
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Work Sans", arial, sans-serif;
     margin: 0;
-    padding: 90px 50px;
-    font-size: 14px;
-    text-align: center;
-    padding-bottom: 0;
 }
 
-.content {
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0;
+    justify-content: space-between;
 }
 
-.navbar{
-    margin: 0 auto;
-    padding: 0;
+nav ul li a {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #868686;
 }
 
-#strongskills{
+a {
+    outline: none !important;
+}
+
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: center;
+    padding-left: 15%;
+}
+
+.name a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: stretch;
+    align-self: end;
+    display: flex;
+}
+footer ul {
+    list-style: none;
+    flex-grow: 1;
+    flex-direction: row;
     display: flex;
     justify-content: center;
-    margin-bottom: 150px;
 }
 
-
-#strongskills ul {
-    width: 50%;
-    background-color: white;
-    box-sizing: border-box;
-    border-radius: 20px;
-    box-shadow: 5px 5px 2px 2px lightgrey;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: -8em;
-    z-index: 1;
+footer ul li{
     padding: 10px;
 }
 
-h3 {
-    line-height: 1.2;
-    font-weight: 500;
-    text-align: center;
+footer ul li a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    
 }
 
-p   {
-    color: #a6a6a6;
+.fa-facebook {
+    color: #3B5998;
 }
 
-h2{
-    font-weight: 500;
+.fa-twitter {
+    color: #1DA1F2;
 }
 
-#aboutMe {
-    display: flex;
-    text-align: center;
-    padding: 100px;
-    padding-top: 0;
+.fa-linkedin{
+    color: #0077B5;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .name {
+        font-size: 50px;
+    }
 }
 
-#aboutMe h2{
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav ul li a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column
-}
-
-.description {
-    display: flex;
-    flex-direction: row;
-}
-
-.description p{
-    margin: 20px;
-    flex-grow: 1;
-    flex-basis: 0;
-}
-
-#strongskills ul li {
-    padding: 10px;
-    margin: 0;
-}
-
-/*#profilePic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px 5px lightgrey;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform .1s;
-}*/
-
-/*#profilePic:hover {
-    transform: scale(1.02);
-}*/
-
-.skills {
-    display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px lightgrey;
-    transition: transform .1s
-}
-
-.skills:hover{
-    transform: scale(1.1)
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    nav ul li a {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
