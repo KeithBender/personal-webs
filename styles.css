@@ -11,7 +11,7 @@ body {
     grid-template-rows: 1fr 3fr;
     width: 100vw;
     height: 100vh;
-    background-image: url(img/splash.jpg);
+    background-image: url(img/Splash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
