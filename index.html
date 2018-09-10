@@ -4,31 +4,75 @@
 <head>
     <title>Keith Bender</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <script src="https://use.fontawesome.com/3ee5219bf8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <link>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 
 <body>
-    <div class="grid-container">
-        <h1 class="name"><a href="index.html">Keith Bender</a></h1>
-        <nav>
+        <h1 class="name">Keith Bender</h1>
+        <div class="toggle-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+        </div>
+        
+    <div class="menu">
+        <div class="data">
             <ul>
-                <li><a class="projects" href="">Projects</a></li>
-                <li><a class="contact" href="">Contact</a></li>
-                <li><a class="about" href="">About</a></li>
+                <li>Navigation</li>
+                <li><a class="projects" href="#">Projects</a></li>
+                <li><a class="contact" href="#">Contact</a></li>
+                <li><a class="about" href="#">About</a></li>
             </ul>
-        </nav>
-        <footer>
+        </div>
+    </div>
+       <!-- <footer>
             <ul>
                 <li><a href="http://facebook.com/"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="http://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="http://twitter.com/"><i class="fab fa-twitter"></i></a></li>
             </ul>
-        </footer>
-    </div>
+        </footer>-->
+    <script type="text/javascript">
+        var t1 = new TimelineMax({paused: true});
+        
+        t1.to(".one", 0.5, {
+            y: 6,
+            rotation: 45,
+            ease: Power0.easeInOut,
+            delay: -1
+        });
+        
+        t1.to(".two", 0.5, {
+            y: -6,
+            rotation: -45,
+            ease: Power0.easeInOut,
+            delay: -1
+        });
+        
+        t1.to(".menu", 0.2, {
+            top: "0%",
+            ease: Expo.easeInOut
+        });
+        
+        t1.staggerFrom(".menu ul li", 1, {
+            x: -100, 
+            opacity: 0, 
+            ease: Expo.easeInOut,
+        }, 0.2);
+        
+        t1.reverse();
+        $(document).on("click", ".toggle-btn", function() {
+            t1.reversed(!t1.reversed());
+        });
+        
+        $(document).on("click", "a", function() {
+            t1.reversed(!t1.reversed());
+        });
+        
+    </script>
 </body>
 
 </html>
