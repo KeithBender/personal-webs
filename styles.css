@@ -1,3 +1,4 @@
+
 html,
 body {
     margin: 0;
@@ -24,30 +25,26 @@ h1 {
 
 .toggle-btn {
     position: fixed;
-    margin: 1.4em;
+    margin: 1.5em;
     padding: 1em;
-    width: 40px;
-    height: 12px;
+    width: 80px;
+    height: 20px;
     right: 0;
     z-index: 1;
 }
 
 span.one {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 40px;
-    height: 2px;
-    background: #fff;
+    width: 50px;
+    height: 5px;
+    background: white;
 }
 
 span.two {
     position: absolute;
-    top: 6px;
-    right: 5px;
-    width: 40px;
-    height: 2px;
-    background: #fff;
+    width: 50px;
+    height: 5px;
+    background: white;
     margin-top: 12px;
 }
 
@@ -55,20 +52,24 @@ span.two {
     z-index: 0;
     position: absolute;
     background: #101010;
-    height: 100vh;
+    height: 40vh;
     width: 100%;
     top: -100%;
 }
 
 .data {
+    height: 100%;
     padding: 8em 0 0 0;
     text-align: center;
 }
 
 ul {
     list-style: none;
+    height: 100%;
+    margin: 0;
     padding: 0;
 }
+
 
 li:first-child {
     color: grey;
