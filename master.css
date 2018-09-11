@@ -6,17 +6,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background: url(img/splash8.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 header {
-
+    
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 80%;
     display: flex;
-    flex-flow: column;
+    flex-flow: column;  
 }
 
 a {
@@ -37,14 +40,15 @@ li {
     letter-spacing: 2px;
 }
 
-li:not(:first-child){
+li {
     padding-top: 5px;
+    text-shadow: 2px 2px 2px  slategray;
 }
 
 .logo {
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: left;
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: flex;
@@ -77,4 +81,107 @@ header nav ul li a {
     font-size: 24px;
 }
 
+h1 {
+     font-family: Poppins;
+     font-weight: bold;
+     color: black;
+     font-size: 42px;
+     text-transform: uppercase;
+     padding: 0.4em 1em;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+ 
+.rev-block {
+     position: absolute;
+}
+ 
+.rev-block span {
+     opacity: 0;
+     animation: appear-text 0.0001s linear forwards;
+     animation-delay: 1.4s;
+}
+ 
+.rev-block:after {
+     content: '';
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 0%;
+     height: 100%;
+     background: #00f0b5;
+     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+     animation-delay: 1s;
+}
+ 
+@keyframes rev-block {
+ 
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+ 
+}
+ 
+@keyframes appear-text {
+ 
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+ 
+}
 
+/* For Bigger screens */
+@media only screen and (min-width: 768px) {
+    .menu {
+        visibility: hidden;
+    }
+    .container {
+        flex-flow: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+    header nav ul {
+    overflow: hidden;
+    height: auto;
+    flex-flow: row;
+    padding: 0;
+    margin: 0;
+    }
+    
+    header nav ul li {
+        padding-top: 0;
+        text-shadow: none;
+       
+    }
+    
+    header nav ul li a {
+         font-size: 18px;
+    }
+    
+    nav {
+        padding-top: 20px;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    .name {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+}
