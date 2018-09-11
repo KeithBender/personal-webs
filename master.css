@@ -6,25 +6,44 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: url(img/splash8.jpg) no-repeat center;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
 }
 
-header {
-    
+.indexbody {
+    height: 100vh;
 }
 
 .container {
     margin: 0 auto;
     width: 80%;
     display: flex;
-    flex-flow: column;  
+    flex-flow: column;
 }
+
+.content {
+    width: 100%;
+}
+
+.content-container {
+    width: 90%;
+    margin: auto;
+}
+
+
 
 a {
     text-decoration: none;
     color: black;
+}
+
+img {
+    display: block;
+    width: 10%;
+    height: auto;
+    margin: auto;
 }
 
 ul {
@@ -42,7 +61,6 @@ li {
 
 li {
     padding-top: 5px;
-    text-shadow: 2px 2px 2px  slategray;
 }
 
 .logo {
@@ -82,107 +100,171 @@ header nav ul li a {
 }
 
 h1 {
-     font-family: Poppins;
-     font-weight: bold;
-     color: black;
-     font-size: 42px;
-     text-transform: uppercase;
-     padding: 0.4em 1em;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: ;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    text-transform: uppercase;
 }
- 
+
+.about {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 100px;
+    font-weight: ;
+    font-family: 'Dancing Script', cursive;
+    top: 170px;
+    transform: translateX(-20px);
+    color: #DCDCDC;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.content p {
+    margin: 0;
+    padding: 5px 0;
+    font-family: "Poppins", cursive;
+    color: #948680;
+}
+
 .rev-block {
-     position: absolute;
+    font-family: Poppins;
+    font-weight: bold;
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    padding: 0.4em 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
- 
+
 .rev-block span {
-     opacity: 0;
-     animation: appear-text 0.0001s linear forwards;
-     animation-delay: 1.4s;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 1.4s;
 }
- 
+
 .rev-block:after {
-     content: '';
-     top: 0;
-     left: 0;
-     position: absolute;
-     width: 0%;
-     height: 100%;
-     background: #00f0b5;
-     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-     animation-delay: 1s;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #00f0b5;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
 }
- 
+
 @keyframes rev-block {
- 
-     0% {
-          left: 0;
-          width: 0%;
-     }
-     50% {
-          left: 0;
-          width: 100%;
-     }
-     100% {
-          left: 100%;
-          width: 0%;
-     }
- 
+
+    0% {
+        left: 0;
+        width: 0%;
+    }
+
+    50% {
+        left: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+
 }
- 
+
 @keyframes appear-text {
- 
-     0% {
-          opacity: 0;
-     }
-     100% {
-          opacity: 1;
-     }
- 
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.footer {
+    margin: 20px 0;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.footer a {
+    padding: 0 10px;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-facebook-square {
+    color: #3B5998;
+}
+
+.fa-twitch {
+    color: #6441a5;
 }
 
 /* For Bigger screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .menu {
         visibility: hidden;
     }
+
     .container {
         flex-flow: row;
         width: 90%;
         justify-content: space-between;
     }
+
     header nav ul {
-    overflow: hidden;
-    height: auto;
-    flex-flow: row;
-    padding: 0;
-    margin: 0;
+        overflow: hidden;
+        height: auto;
+        flex-flow: row;
+        padding: 0;
+        margin: 0;
     }
-    
+
     header nav ul li {
         padding-top: 0;
         text-shadow: none;
-       
+
     }
-    
+
     header nav ul li a {
-         font-size: 18px;
+        font-size: 18px;
     }
-    
+
     nav {
         padding-top: 20px;
     }
-    
+
     .logo {
         text-align: center;
         padding: 20px;
     }
-    
+
     .name {
         font-size: 18px;
         padding-top: 20px;
+    }
+
+    img {
+        width: 10%;
+        height: auto;
     }
 }
