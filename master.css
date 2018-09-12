@@ -9,11 +9,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 95vh;
 }
 
 .indexbody {
-    height: 100vh;
+    height: 95vh;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
 
 .content-container {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -55,7 +55,6 @@ ul {
 li {
     list-style: none;
     text-align: center;
-    font-size: 18px;
     letter-spacing: 2px;
 }
 
@@ -64,9 +63,9 @@ li {
 }
 
 .logo {
-    padding-top: 40px;
+    padding-top: 100px;
     text-align: left;
-    font-size: 24px;
+    font-size: 52px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: flex;
@@ -96,16 +95,15 @@ header nav ul li a {
     margin: 0;
     display: block;
     padding: 20px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: ;
     text-align: center;
     margin: 0;
-    padding: 30px;
     text-transform: uppercase;
+    
 }
 
 .about {
@@ -129,11 +127,15 @@ h1 {
     color: #948680;
 }
 
+.content p:last-child {
+    padding-bottom: 0;
+}
+
 .rev-block {
     font-family: Poppins;
     font-weight: bold;
     color: black;
-    font-size: 42px;
+    font-size: 100px;
     text-transform: uppercase;
     padding: 0.4em 1em;
     position: absolute;
@@ -192,15 +194,15 @@ h1 {
 }
 
 .footer {
-    margin: 20px 0;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     height: 50px;
     text-align: center;
-    font-size: 32px;
 }
 
 .footer a {
-    padding: 0 10px;
+    padding: 10px;
+    font-size: 52px;
 }
 
 .fa-twitter {
