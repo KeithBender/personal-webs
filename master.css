@@ -13,7 +13,7 @@ body {
 }
 
 .indexbody {
-    height: 95vh;
+    height: 100vh;
 }
 
 .container {
@@ -63,7 +63,7 @@ li {
 }
 
 .logo {
-    padding-top: 100px;
+    padding-top: 20px;
     text-align: left;
     font-size: 52px;
     letter-spacing: 2px;
@@ -75,6 +75,10 @@ li {
 .menu {
     text-align: right;
     cursor: pointer;
+}
+
+header{
+    box-shadow: 0px 2px 5px 2px slategrey;
 }
 
 header nav ul {
@@ -268,5 +272,15 @@ h1 {
     img {
         width: 10%;
         height: auto;
+    }
+    
+    .footer a {
+        font-size: 24px;
+        padding: 0 10px;
+        margin: 0;
+    }
+    
+    .background-text {
+        top: 125px;
     }
 }
