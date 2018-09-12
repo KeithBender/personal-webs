@@ -106,14 +106,14 @@ h1 {
     
 }
 
-.about {
+.background-text {
     position: absolute;
     padding: 0;
     margin: 0;
     font-size: 100px;
     font-weight: ;
     font-family: 'Dancing Script', cursive;
-    top: 170px;
+    top: 230px;
     transform: translateX(-20px);
     color: #DCDCDC;
     opacity: 0.4;
