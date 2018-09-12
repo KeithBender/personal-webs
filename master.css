@@ -163,6 +163,19 @@ h1 {
     animation-delay: 1s;
 }
 
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    text-align: center;
+}
+
+#submit_button {
+    margin: 0 auto;
+}
+
 @keyframes rev-block {
 
     0% {
