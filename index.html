@@ -1,47 +1,111 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Keith Bender</title>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Playfair+Display|Poppins|Dancing+Script" rel="stylesheet">
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 
-<body class="indexbody">
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a class="name" href="index.html">Keith bender</a>
-                <a class="menu" href="#">Menu <i class="fas fa-bars"></i></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="main-content">
-    <h1 class="background-text">HOME</h1>
-    <h1 class="rev-block">
-        <span>Welcome</span>
-    </h1>
+<body id="top">
+    <div id="loader">
     </div>
-    <div class="footer">
-        <footer>
-            <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
-            <a href="http://www.twitch.com"><i class="fab fa-twitch"></i></a>
-            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.linkedin.com/
-"><i class="fab fa-linkedin"></i></a>
-        </footer>
+    <div class="side-nav">
+        <div class="side-nav-container">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#interests">Interests</a>
+        </div>
     </div>
 
+
+    <div class="main-content">
+        <div class="menu">
+            <div class="menu-container">
+            <div class="top-bar"></div>
+            <div class="bottom-bar"></div>
+        </div>
+        </div>
+        <div id="about"></div>
+        <section class="full">
+            <div class="container-fluid">
+                <h1 class="title sr">Keith <span class="break">Bender</span></h1>
+                <h3 id="info" class="sr">(425) 246-5717 <span class="break">|</span> K.bender30@gmail.com</h3>
+                <p class="sr">Hello! I am a student with a passion for computer science and a knack for learning!</p>
+                <a href="https://github.com/KeithBender"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <div id="skills"></div>
+        <section class="full">
+            <div class="container-fluid">
+                <h1 class="title sr">Skills</h1>
+                <div class="row skills">
+                    <div class="col-md-6">
+                        <h2 class="sr">Front-End</h2>
+                        <p class="sr">HTML</p>
+                        <p class="sr">CSS</p>
+                        <p class="sr">BOOTSTRAP</p>
+                        <p class="sr">JAVASCRIPT</p>
+                        <p class="sr">JQUERY</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="sr">Other</h2>
+                        <p class="sr">C++</p>
+                        <p class="sr">JAVA</p>
+                        <p class="sr">LINUX COMMAND LINE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="education"></div>
+        <section class="full">
+            <div class="container-fluid">
+                <h1 class="title sr">Education</h1>
+                <h2 class="sr">B.S. COMPUTER SCIENCE W/ MINOR IN MATH</h2>
+                <p class="sr">Texas State University</p>
+                <p class="sr">2015 - PRESENT (Expected 2019)</p>
+                <br>
+                <h2 class="sr">WEB DEVELOPMENT TRACK</h2>
+                <p class="sr"><a href="https://teamtreehouse.com/keithbender" id="webdev">Teamtreehouse</a></p>
+                <p class="sr">STARTED APRIL 2017</p>
+                <br>
+                <h2 class="sr">COLT STEEL'S WEB DEVELOPMENT TRACK</h2>
+                <p class="sr"><a href="https://www.udemy.com/user/keithbender/" id="webdev">Udemy</a></p>
+                <p>STARTED August 2018</p>
+
+            </div>
+        </section>
+        <div id="projects"></div>
+        <section class="full">
+            <div class="container-fluid ">
+                <h1 class="title sr" id="project-title">Projects</h1>
+                
+            </div>
+        </section>
+        <div id="interests"></div>
+        <section class="full">
+            <div class="container-fluid">
+                <h1 class="title sr">Interests</h1>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/lib/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="assets/js/lib/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
