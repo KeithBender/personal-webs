@@ -5,232 +5,85 @@
 }
 
 body {
-    font-family: 'Saira Extra Condensed', sans-serif;
-    background: #c5c1c0 !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
-#loader {
-    position: fixed;
+header {
     width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: #002f4d url('https://media.giphy.com/media/322Gg7gspi2HlkuqD8/giphy.gif') no-repeat center center;
-    z-index: 3;
+    background: #F8F8FF;
 }
 
-
-.side-nav {
-    display: block;
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: #1A2930;
-    overflow: hidden;
-    padding-top: 20px;
+span {
+    color: #0247FE;
 }
 
-.side-nav a {
-    display: block;
-    text-decoration: none;
-    padding: 20px;
-    color: white;
-    text-transform: capitalize;
-    font-size: 24px;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
+.container {
+    height: 100%;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
-
-.side-nav a:hover {
-    transition: 0.5s ease;
-    opacity: 0.6;
-    text-decoration: none;
-    color: black;
-}
-
-.side-nav-container {
-    position: relative;
-    top: 25%;
-}
-
-.full {
+#sec-1 {
     height: 100vh;
-    width: 80%;
-    margin-left: auto;
-    font-family: 'Saira Extra Condensed', sans-serif;
+    background: #FB9902;
 }
 
-.title {
-    font-size: 60px;
-    margin-top: 1em;
-    font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #343a40;
+#sec-2 {
+    height: 100vh;
+    background: #F7E9D4;
 }
 
-.container-fluid {
-    height: 100%;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+#sec-3 {
+    height: 100vh;
+    background: #D4E4F7;
 }
 
-#info {
-    margin-top: 10px;
+#sec-4 {
+    height: 100vh;
+    background: #F7F7D4;
 }
 
-.break {
-    color: #003F87;
-}
-
-p {
-    margin-top: 10px;
-    font-size: 24px;
-    letter-spacing: 2px;
+#intro-head {
+    height: 100vh;
 }
 
 .fa-github {
+    font-size: 24px;
+    color: black;
+    padding: 20px;
+}
+
+.fa-caret-down, .fa-caret-up{
     font-size: 32px;
+    padding: 20px;
+    transition: 0.5s ease;
     color: black;
 }
 
-h2 {
-    letter-spacing: 3px;
-    font-size: 32px;
-}
-
-#webdev:hover {
-    text-decoration: none;
-    opacity: 0.5;
-}
-
-.carousel {
-    width: 100%;
-    height: auto;
-}
-
-#project-title {
-    font-size: 72px;
-}
-
-
-.display {
-    opacity: 1 !important;
+.fa-caret-down:hover, .fa-caret-up:hover {
+    cursor: pointer;
+    -ms-transform: translate(0, -20px);
+    /* IE 9 */
+    -webkit-transform: translate(0, -20px);
+    /* Safari */
+    transform: translate(0, -20px);
+    opacity: 0.7;
     transition: 0.5s ease;
-    z-index: 4 !important;
 }
 
-@media only screen and (max-width: 1024px) {
-    #carouselExampleIndicators {
-        width: 100%;
-    }
+ul li {
+    list-style: none;
 }
 
-@media only screen and (max-width: 996px) {
-    
-    .side-nav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        opacity: 0;
-        transition: 0.5s ease;
-        z-index: -2;
-    }
-
-    .side-nav a {
-        font-size: 32px;
-    }
-
-    .full {
-        width: 100%;
-        margin-left: none;
-        text-align: center;
-    }
-
-    .main-content {
-        width: 100%;
-    }
-
-    .title,
-    #project-title {
-        margin-top: 25%;
-    }
-
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: flex-end;
-        background: white;
-        z-index: 5;
-    }
-
-    .top-bar,
-    .bottom-bar {
-        background: black;
-        width: 50px;
-        height: 5px;
-        transition: 0.5s ease;
-    }
-
-    .white {
-        background: white;
-    }
-
-    .menu-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .bottom-bar {
-        margin-top: 10px;
-    }
-
-    .rotate-45 {
-        -ms-transform: rotate(45deg);
-        /* IE 9 */
-        -webkit-transform: rotate(45deg);
-        /* Safari */
-        transform: rotate(45deg) translate(0, 11px);
-
-    }
-
-    .rotate-other45 {
-        -ms-transform: rotate(-45deg);
-        /* IE 9 */
-        -webkit-transform: rotate(-45deg);
-        /* Safari */
-        transform: rotate(-45deg) translate(0, -11px);
-    }
+#skills {
+    margin-bottom: 50px;
 }
 
-
-@media only screen and  (max-width: 600px) {
-    .top-bar, .bottom-bar {
-        width: 25px;
-    }
-    .title, #project-title {
-        font-size: 24px;
-    }
-    
-    h2, h3 {
-        font-size: 18px !important;
-    }
-    
-    p {
-        font-size: 16px;
-    }
-    
-    
+#education {
+    margin-bottom: 50px;
 }
+
+.top-buffer { margin-top:20px; }
