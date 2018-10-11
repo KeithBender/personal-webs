@@ -17,6 +17,18 @@ span {
     color: #0247FE;
 }
 
+.arrow{
+    margin-top: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container {
     height: 100%;
     display: flex;
@@ -26,9 +38,10 @@ span {
 
 }
 
+
 #sec-1 {
     height: 100vh;
-    background: #FB9902;
+    background: #e2fbf9;
 }
 
 #sec-2 {
@@ -42,8 +55,7 @@ span {
 }
 
 #sec-4 {
-    height: 100vh;
-    background: #F7F7D4;
+    background: #1a1a1a ;
 }
 
 #intro-head {
@@ -51,13 +63,15 @@ span {
 }
 
 .fa-github {
-    font-size: 24px;
+     margin-left: auto;
+    margin-right: auto;
+    font-size: 52px;
     color: black;
     padding: 20px;
 }
 
 .fa-caret-down, .fa-caret-up{
-    font-size: 32px;
+    font-size: 56px;
     padding: 20px;
     transition: 0.5s ease;
     color: black;
@@ -87,3 +101,62 @@ ul li {
 }
 
 .top-buffer { margin-top:20px; }
+
+.white {
+    color: white;
+}
+
+#last-arrow {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    
+}
+
+#projects {
+    margin-top: 40px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    height: 150px;
+    background: #696969	
+}
+
+.card-1 {
+    background: url("img/photoGrid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.card-2 {
+    background: url('img/responsive.png') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.card-3 {
+    background: url('img/todoList.png') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.card-4 {
+    background: url('img/purrfect.png') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.card-5 {
+    background: url('img/theImgGallery.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
