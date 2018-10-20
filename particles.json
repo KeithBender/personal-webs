@@ -1,0 +1,26 @@
+{
+    "particles": {
+        "number": {
+            "value": 200
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": true
+        },
+        "size": {
+            "value": "3",
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1
+            }
+        },
+        "move": {
+            "speed": 1
+        },
+        "line_linked": {
+            "width": 0.5
+        }
+
+    }
+}
