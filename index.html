@@ -6,156 +6,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Keith Bender</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.min.css" />
 
-    <!-- Bootstrap 4 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 
 <body>
-    <header id="top">
-        <div class="container" id="intro-head">
-            <h1 class="name sr">Keith <span>Bender</span></h1>
-            <p class="sr">(425) 246-571 | k.bender30@gmail.com</p>
-            <p class="sr">Student / Web developer</p>
-            <a href="https://github.com/KeithBender" class="github"><i class="fab fa-github sr"></i></a>
-            <a href="#sec-1"><i class="fas fa-caret-down sr arrow"></i></a>
+    <!--PRELOADER-->
+    <div class="preloader"></div>
+
+    <!--HOME-->
+    <section id="home">
+        <div id="particlesJS"></div>
+        <header class="container flex">
+            <div class="flex intro">
+                <div class="text">Hello, I'm <span id="name">Keith Bender.</span>
+                    <br>
+                    I'm a front-end web developer
+                </div>
+                <div class="button" id="box-btn">
+                    <span id="view-work">View my work</span>
+                    <i class="fas fa-angle-down" id="arrow"></i>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!--END OF HOME-->
+
+    <!--NAVIGATION-->
+    <nav class="sticky">
+        <div id="menu">
+            <i class="fas fa-bars"></i>
         </div>
-    </header>
-
-    <main id="content">
-        <section id="sec-1">
-            <div class="container sr">
-                <h1 class="sr">About <span>Me</span></h1>
-                <p class="sr">Hi! My name is Keith Bender and i am a student for life with a passion for computer science and a knack for learning! Currently I am studying Front-End Web Developement. </p>
-                <a href="#sec-2" class="arrow"><i class="fas fa-caret-down"></i></a>
+        <div class="nav-links">
+            <i class="fas fa-times"></i>
+            <div class="wrap wrapper">
+                <div class="page-link link1"><a href="#home">Home</a></div>
+                <div class="page-link link2"><a href="#about">About</a></div>
+                <div class="page-link link3"><a href="#portfolio">Portfolio</a></div>
+                <div class="page-link link4"><a href="#contact">Contact</a></div>
             </div>
-        </section>
-        <section id="sec-2">
-            <div class="container sr">
-                <h1 id="skills" class="sr top-buffer">My <span>Skills</span></h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="sr">Front-End</h2>
+        </div>
+    </nav>
+    <!--END OF NAVIGATION-->
+
+    <!--ABOUT-->
+    <section id="about">
+        <div class="flex wrapper">
+            <div class="header" id="about-text">ABOUT</div>
+            <div class="cards ">
+                <div class="card col1">
+                    <i class="fas fa-tachometer-alt icons"></i>
+                    <div class="label">Fast</div>
+                    <div class="desc">Fast load times and lag free interactions is my highest priority</div>
+                </div>
+                <div class="card col2">
+                    <i class="fas fa-mobile icons"></i>
+                    <div class="label">Responsive</div>
+                    <div class="desc">Prioritizing the clients experience with any type of device</div>
+                </div>
+                <div class="card col3">
+                    <i class="fas fa-lightbulb icons"></i>
+                    <div class="label">Self-starter</div>
+                    <div class="desc">Self-motivated everyday to learn something new</div>
+                </div>
+                <div class="card col4">
+                    <i class="fas fa-rocket icons"></i>
+                    <div class="label">Dynamic</div>
+                    <div class="desc">I love making webpages come to life</div>
+                </div>
+            </div>
+    </section>
+    <!--END OF ABOUT-->
+
+    <!--SKILLS-->
+    <section id="skills">
+        <div class="wrapper">
+            <div class="header skill-header ">Technologies</div>
+            <div class="cards  space-around">
+                <div class="card languages">
+                    <div class="label ">Languages</div>
+                    <div class="desc">
                         <ul>
-                            <li class="sr">HTML</li>
-                            <li class="sr">CSS</li>
-                            <li class="sr">JAVASCRIPT</li>
-                            <li class="sr">JQUERY</li>
-                            <li class="sr">BOOTSTRAP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="sr">Other</h2>
+                </div>
+                <div class="card frameworks">
+                    <div class="label">Frameworks / Version Control</div>
+                    <div class="desc">
                         <ul>
-                            <li class="sr">C++</li>
-                            <li class="sr">JAVA</li>
-                            <li class="sr">GIT / GITHUB</li>
-                            <li class="sr">LINUX TERMINAL</li>
+                            <li>Bootstrap</li>
+                            <li>Sass</li>
+                            <li>jQuery</li>
+                            <li>Git / Github</li>
+                            <li>Gulp</li>
                         </ul>
                     </div>
                 </div>
-                <a href="#sec-3" class="arrow"><i class="fas fa-caret-down"></i></a>
+                <div class="card other">
+                    <div class="label ">Other</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Linux Terminal</li>
+                            <li>Windows / MacOs</li>
+                            <li>AJAX</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="sec-3">
-            <div class="container">
-                <h1 id="education" class="sr">Education</h1>
-                <div class="row">
-                    <div class="col-md-4 bg-myColor">
-                        <h3 class="sr">B.S. Computer Science W/ Math Minor</h3>
-                        <p class="sr">Texas State Universty</p>
-                        <p class="sr">2015 - Present (Expected 2019)</p>
-                    </div>
-                    <div class="col-md-4 bg-myColor second">
-                        <h3 class="sr">Front-End Web Track</h3>
-                        <p class="sr"><a href="https://teamtreehouse.com/keithbender">Teamtreehouse</a></p>
-                        <p class="sr">Started April 2017</p>
-                    </div>
-                    <div class="col-md-4 bg-myColor third">
-                        <h3 class="sr">Web Developer Course</h3>
-                        <p class="sr"><a href="https://www.udemy.com/user/keithbender/">Udemy</a> by Colt Steele</p>
-                        <p class="sr">Started August 2018</p>
-                    </div>
+        </div>
+    </section>
+    <!--END OF SKILLS-->
+    <!--PROJECTS-->
+    <section id="portfolio">
+        <div class="wrapper flex project-wrap">
+            <div class="header project" id="projects">Projects</div>
+            <div class="gallery">
+                <div class="block bk-1">
+                    <a href="./projects/Photo Grid/photoGrid.html"><img src="./img/PhotoGrid.png" alt=""></a>
                 </div>
-                <a href="#sec-4" class="arrow"><i class="fas fa-caret-down"></i></a>
+                <div class="block bk-2">
+                    <a href="./projects/imgGallery/imgGallery.html"><img src="./img/Img Gallery.png" alt=""></a>
+                </div>
+                <div class="block bk-3">
+                    <a href="./projects/ResponsivePortfolio/responsive.html"><img src="./img/ResponsiveWeb.png" alt=""></a>
+                </div>
+                <div class="block bk-4">
+                    <a href="./projects/todoList/todoList.html"><img src="./img/Todo.png" alt=""></a>
+                </div>
             </div>
-        </section>
-        <section id="sec-4">
-            <div class="container">
-                <h1 class="sr white" id="projects">Projects</h1>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 top-buffer">
-                        <div class="card ">
-                            <div class="card-body card-1">
+        </div>
+    </section>
+    <!--END OF PROJECTS-->
 
+    <!--CONTACT-->
+    <section id="contact">
+        <!--SVG FOR SLANTED BG-->
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            class="svgcolor-light">
+            <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="white"></path>
+        </svg>
+        <!--END OF SVG-->
 
-                            </div>
-                            <a href="projects/Photo Grid/photoGrid.html" class="btn btn-primary">Photo Grid</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 top-buffer">
-                        <div class="card ">
-                            <div class="card-body card-2">
-
-
-                            </div>
-                            <a href="projects/ResponsivePortfolio/responsive.html" class="btn btn-primary">Responsive Portfolio</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row top-buffer">
-                    <div class="col-sm-6 top-buffer">
-                        <div class="card">
-                            <div class="card-body card-3">
-
-
-                            </div>
-                            <a href="projects/todoList/todoList.html" class="btn btn-primary">To-do List</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 top-buffer">
-                        <div class="card ">
-                            <div class="card-body card-4">
-
-                            </div>
-                            <a href="projects/purrfect/purrfectMatch.html" class="btn btn-primary">Purrfect</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row top-buffer">
-                    <div class="col-sm-12">
-                        <div class="card">
-                        <div class="card-body card-5">
-
-
-                        </div>
-                            <a href="projects/imgGallery/imgGallery.html" class="btn btn-primary">Image Gallery</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <a href="#top" class="arrow"><i class="fas fa-caret-up white" id="last-arrow"></i></a>
-
+        <div class="wrapper flex">
+            <div class="header" id="contact-section">Contact</div>
+            <div class="header-bar"></div>
+            <div id="email-container"><a href="mailto:k.bender30@gmail.com" id="email">Email: k.bender30@gmail.com</a></div>
+            <div class="contact-links">
+                <a href="https://github.com/KeithBender"><i class="fas fa-code-branch icons"></i></a>
+                <a href="https://www.linkedin.com/in/keith-bender-b36a20170/"><i class="fab fa-linkedin icons"></i></a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <!--END OF CONTACT-->
 
+    <!--FOOTER-->
     <footer>
-        <div class="container">
-            <p>Keith Bender (Web Developer)</p>
+        <a href="#home"><i class="fas fa-angle-double-up"></i></a>
+        <div class="info-box">
+            <div class="footnote">Keith Bender <span class="highlight">©2018</span></div>
         </div>
     </footer>
+    <!--END OF FOOTER-->
 
-    <script src="assets/js/lib/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="assets/js/lib/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="./js/app-min.js"></script>
 </body>
 
 </html>
