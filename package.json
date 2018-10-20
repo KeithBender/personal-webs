@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "glob-watcher": "^5.0.1"
+  },
   "devDependencies": {
     "async-once": "^1.0.1",
     "del": "^3.0.0",

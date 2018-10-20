@@ -200,6 +200,7 @@ nav {
 }
 
 .card {
+
     color: #616161;
     width: 20%;
     height: 230px;
@@ -428,7 +429,7 @@ footer {
         .nav-links {
             height: 100vh;
             background: $nav-bg;
-            z-index: 1;
+            z-index: 3;
             position: fixed;
             top: 0;
             left: 0;
@@ -506,7 +507,6 @@ footer {
     }
 
     .card {
-        padding-right: 20px;
         flex: 1 50%;
     }
 
@@ -520,6 +520,11 @@ footer {
 
     #about {
         padding-bottom: 0;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
     }
 }
 
