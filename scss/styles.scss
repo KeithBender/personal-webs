@@ -96,7 +96,6 @@ nav {
     height: 50px;
     background: $nav-bg;
     border-bottom: 3px solid $nav-border;
-    box-shadow: 0px 15px 10px -15px black;
     z-index: 99;
 
 
@@ -414,6 +413,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .sticky {
+        position: fixed;
+    }
+
     .gallery {
         width: 100%;
     }
