@@ -313,7 +313,8 @@ footer {
     width: 95%; }
   nav {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }
     nav .nav-links {
       height: 100vh;
       background: #1B242F;

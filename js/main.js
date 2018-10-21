@@ -5,7 +5,7 @@ const about = document.getElementById('about');
 const $root = $('html, body');
 const sr = document.getElementsByClassName('sr');
 
-let t1 = new TimelineMax();
+// let t1 = new TimelineMax();
 
 $(document).ready(() => {
     setInterval(() => {
@@ -84,32 +84,32 @@ const waypointThree = new Waypoint({
     offset: '40%'
 });
 
-$('.fa-bars').on('click', () => {
-    $('.nav-links').fadeIn('fast');
-    t1.from('.link1', 0.5, {
-        x: -100,
-        opacity: 0
-    });
-    t1.from('.link2', 0.5, {
-        x: -100,
-        opacity: 0
-    });
-    t1.from('.link3', 0.5, {
-        x: -100,
-        opacity: 0
-    });
-    t1.from('.link4', 0.5, {
-        x: -100,
-        opacity: 0
-    });
+// $('.fa-bars').on('click', () => {
+//     $('.nav-links').fadeIn('fast');
+//     t1.from('.link1', 0.5, {
+//         x: -100,
+//         opacity: 0
+//     });
+//     t1.from('.link2', 0.5, {
+//         x: -100,
+//         opacity: 0
+//     });
+//     t1.from('.link3', 0.5, {
+//         x: -100,
+//         opacity: 0
+//     });
+//     t1.from('.link4', 0.5, {
+//         x: -100,
+//         opacity: 0
+//     });
 
-    $('.fa-times').addClass('cross animated-right');
-});
+//     $('.fa-times').addClass('cross animated-right');
+// });
 
-$('.fa-times').on('click', () => {
-    $('.nav-links').fadeOut('slow');
-});
+// $('.fa-times').on('click', () => {
+//     $('.nav-links').fadeOut('slow');
+// });
 
-$('.page-link').on('click', () => {
-    $('.nav-links').fadeOut('fast');
-});
+// $('.page-link').on('click', () => {
+//     $('.nav-links').fadeOut('fast');
+// });
