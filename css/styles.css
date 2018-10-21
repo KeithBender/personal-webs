@@ -316,7 +316,7 @@ footer {
     nav .nav-links {
       height: 100vh;
       background: #1B242F;
-      z-index: 3;
+      z-index: 1000;
       position: fixed;
       top: 0;
       left: 0;
@@ -370,10 +370,7 @@ footer {
   .gallery {
     width: 100%; }
   #about {
-    padding-bottom: 0; }
-  .sticky {
-    position: fixed;
-    top: 0; } }
+    padding-bottom: 0; } }
 
 @media (min-width: 769px) {
   .nav-links {

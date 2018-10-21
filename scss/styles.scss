@@ -429,7 +429,7 @@ footer {
         .nav-links {
             height: 100vh;
             background: $nav-bg;
-            z-index: 3;
+            z-index: 1000;
             position: fixed;
             top: 0;
             left: 0;
@@ -522,10 +522,6 @@ footer {
         padding-bottom: 0;
     }
 
-    .sticky {
-        position: fixed;
-        top: 0;
-    }
 }
 
 @media(min-width: 769px) {
